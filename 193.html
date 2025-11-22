@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+  </head>
+  <body>
+    <canvas id="exampleCanvas" width="250" height="200" style="border:1px solid #dddddd;">
+      The canvas tag is not supported by your browser..
+    </canvas>
+    <script>
+      var canvas = document.getElementById("exampleCanvas");
+      var ctx = canvas.getContext("2d");
+      ctx.beginPath();
+      ctx.arc(125, 95, 70, 0, 2 * Math.PI);
+      ctx.strokeStyle = '#1c87c9';
+      ctx.stroke();
+    </script>
+  </body>
+</html>
